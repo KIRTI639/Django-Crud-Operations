@@ -11,7 +11,7 @@ Before you can run a Django project, there are several prerequisites you need to
 
  git clone https://github.com/KIRTI639/Django-Crud-Operations.git
  
-4. On the directory which containing the manage.py file run the command
+4.On the directory which containing the manage.py file run the command
    
   python manage.py runserver
 
