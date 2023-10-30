@@ -1,0 +1,40 @@
+{% extends "home.html" %}
+{% block body %}
+<h3 class="text-center pt-4">Update Candidate Details</h3>
+<div class="container pt-3 shadow-lg p-4 mb-5 bg-white rounded">
+  
+   <form action="/update/{{data.id}}/" method="post">
+       {% csrf_token %}
+       <label for="Name">Name</label>
+       <input type="text" name="name" class="form-control" required value="{{data.name}}">
+       <div class="row pt-3">
+           <div class="col-lg-6">
+               <label for="country">Country</label>
+               <input type="text" name="country" id="" class="form-control" required value="{{data.country}}">
+           </div>
+           <div class="col-lg-6">
+               <label for="state">State</label>
+               <input type="type" name="state" id="" class="form-control" required value="{{data.state}}"> 
+           </div>
+       </div>
+       <div class="row pt-3">
+           <div class="col-lg-6">
+               <label for="email">Email</label>
+               <input type="text" name="email" id="" class="form-control" required value="{{data.email}}">
+           </div>
+           <div class="col-lg-6">
+               <label for="phone">Phone</label>
+               <input type="type" name="phone" id="" class="form-control" required value="{{data.phone}}">
+           </div>
+       </div>
+       <div class="row pt-3">
+           <div class="col-lg-6">
+               <button type="reset" class="btn btn-danger">Reset</button>
+           </div>
+           <div class="col-lg-6">
+               <button type="submit" class="btn btn-success">Submit</button>
+           </div>
+       </div>
+   </form>
+</div> 
+{% endblock body %}

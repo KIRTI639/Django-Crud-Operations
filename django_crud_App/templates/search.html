@@ -1,0 +1,28 @@
+{% extends "home.html" %}
+
+
+{% block body %}
+<h3 class="text-center pt-4">All Candidate Details</h3> 
+<table class="table container table-striped table-hover bg-white">
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>State</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    {% for item in data %}
+    <tr>
+    <td>{{item.name}}</td>
+        <td>{{item.country}}</td>
+        <td>{{item.state}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+        <td><a href="/update/{{item.id}}"><i class="fa-solid fa-pen"></i></a></td>
+        <td><a href="/delete/{{item.id}}"><i class="fa-solid fa-trash"></i></a></td>
+     </tr>
+    {% endfor %}
+</table>
+{% endblock body %}
