@@ -15,8 +15,8 @@ Before you can run a Django project, there are several prerequisites you need to
    
   python manage.py runserver
 
-6. In browser write localhost:8000 which is the default django port it can be changed by using the command
-7. 
+5. In browser write localhost:8000 which is the default django port it can be changed by using the command
+   
   python manage.py runserver <write here any port number>
   
  Now its ready to see the project.
