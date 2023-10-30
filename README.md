@@ -1,5 +1,6 @@
 # Django-Crud-Operations
 Before you can run a Django project, there are several prerequisites you need to have in place. Django is a Python web framework, so you will need Python and django. 
+
 1.Python: Django is a Python web framework, so you need to have Python installed. It is recommended to use Python latest version.
 2.Django: You need to install Django using pip. You can do this using the following command:
   # pip install django
